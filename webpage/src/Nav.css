@@ -1,6 +1,8 @@
 #navWrapperOuter{
     width: 100%;
     background-color: #fff;
+    position: sticky;
+    top: 0%;
 }
 #navWrapper{
     display: flex;
