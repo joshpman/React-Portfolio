@@ -1,18 +1,89 @@
+@import './root.css';
 #home{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    width: 100%;
+    padding-top: 8rem;
+    overflow-x: hidden;
 }
 #topContentWrapper{
-    width: 75rem;
+    width: 70rem;
     justify-content: space-between;
     display: flex;
     flex-direction: row;
+
 }
-.socialLogos{
+#heroLeftWrapper{
+    width: 35rem;
+}
+#mainHeader{
+    font-size: 3.5rem;
+    color: var(--primary-text);
+    font-family: 'Playpen Sans';
+    font-weight: 800;
+    line-height: 5rem;
+}
+#lowerText{
+    padding-top: 1.5rem;
+    line-height: 2.2rem;
+    font-size: 1.4rem;
+    color: var(--secondary-text);
+    font-weight: 200;
+}
+#socialsWrapper{
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+}
+#githubA, #linkedA{
     width: 40px;
+    height: auto;
 }
+#githubA:hover, #linkedA:hover{
+    cursor: pointer;
+}
+#githubLogo, #linkedinLogo{
+    transform: scale(70%);
+}
+#githubLogo g, #linkedinLogo path{
+    fill: #393838;
+    transition: fill 200ms linear;
+}
+#githubLogo:hover g, #linkedinLogo:hover path{
+    fill: var(--text-hover);
+}
+
 #bitmoji{
     width: 400px;
+}
+#heroFooterWrapper{
+    margin-top: 3rem;
+    width: 70rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#heroInner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40rem;
+}
+#heroFooterLeft{
+    display: flex;
+    align-items: center;
+}
+#heroFooterLabel{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--primary-text)
+}
+#heroFooterRight{
+    display: flex;
+    width: 25rem;
+    justify-content: space-between;
+    align-items: center;
 }

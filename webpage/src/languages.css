@@ -1,0 +1,13 @@
+.languageWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 7rem;
+}
+.languageLeft, .languageRight{
+    border-radius: .5vmin;
+    transition: 100ms linear;
+}
+.languageLeft:hover, .languageRight:hover{
+    cursor: pointer;
+    transform: translateY(-10%);
+}
