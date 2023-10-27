@@ -1,4 +1,30 @@
 #aboutWrapper{
     display: flex;
-    flex-grow: 0;
+    width: 100%;
+    padding: 15vh 20vw;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: inset 0px 1rem 1rem -.5rem #CCC,
+    inset 0px -1rem 1rem -.5rem #CCC;
+
+}
+#aboutLeftImage{
+    width: 600px;
+    margin-right: 5vw;
+}
+#aboutMeLabel{
+    font-size: 1.5rem;
+    margin-bottom: 1.5vh;
+    color: var(--text-hover);
+}
+#aboutMeHeader{
+    font-family: 'Playpen Sans', Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+#aboutPara{
+    margin-top: 3vh;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    color: var(--secondary-text);
 }

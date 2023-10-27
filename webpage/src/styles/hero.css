@@ -5,10 +5,13 @@
     justify-content: top;
     align-items: center;
     width: 100%;
-    flex-grow: 2;
+    min-height: 95vh;
+    height: fit-content;
     padding-top: 7rem;
     overflow-x: hidden;
+    overflow-y:visible;
     background-color: var(--secondary-color);
+    box-shadow: inset 0px 11px 8px -10px #CCC;
 }
 #topBottomWrapper{
     display: flex;
