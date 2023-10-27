@@ -1,4 +1,4 @@
-import './Nav.css';
+import './styles/nav.css';
 import logo from './images/jpLogo.webp';
 const Nav = ()=>{
     return(

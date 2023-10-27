@@ -2,12 +2,17 @@
     display: flex;
     justify-content: space-between;
     width: 7rem;
+    transition: 200ms linear;
 }
 .languageLeft, .languageRight{
-    border-radius: .5vmin;
-    transition: 100ms linear;
+    border-radius: .8vmin;
+    transition: 200ms linear;
 }
 .languageLeft:hover, .languageRight:hover{
     cursor: pointer;
-    transform: translateY(-10%);
+    
+}
+.languageWrapper:hover{
+    cursor: pointer;
+    transform: translateY(-15%);
 }

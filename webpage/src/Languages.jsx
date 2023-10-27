@@ -1,4 +1,4 @@
-import './languages.css';
+import './styles/languages.css';
 const Languages = ({language1, language2})=>{
     return(
         <div className="languageWrapper">
