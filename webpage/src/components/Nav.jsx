@@ -1,5 +1,5 @@
-import './styles/nav.css';
-import logo from './images/jpLogo.webp';
+import '../styles/nav.css';
+import logo from '../images/jpLogo.webp';
 const Nav = ()=>{
     return(
         <div id="navWrapperOuter">

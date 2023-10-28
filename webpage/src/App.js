@@ -1,13 +1,15 @@
-import Nav from './Nav';
-import Hero from './Hero';
-import About from './About';
+import Nav from './components/Nav';
+import Hero from './components/Hero';
+import About from './components/About';
+import Project from './components/Project';
 
 function App() {
     return (
     <>
       <Nav/>
-      <Hero />
-      <About />
+      <Hero/>
+      <About/>
+      <Project/>
     </>
   );
 }

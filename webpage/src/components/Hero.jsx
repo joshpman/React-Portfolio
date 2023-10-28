@@ -1,12 +1,12 @@
-import bitmoji from './images/bitMoji.webp';
+import bitmoji from '../images/bitMoji.webp';
 import Languages from './Languages';
-import cIcon from './images/languageLogos/c.png';
-import htmlIcon from './images/languageLogos/html.png';
-import cssIcon from './images/languageLogos/css.png';
-import javascriptIcon from './images/languageLogos/javascript.png';
-import javaIcon from './images/languageLogos/java.png';
-import reactIcon from './images/languageLogos/react.png';
-import './styles/hero.css';
+import cIcon from '../images/languageLogos/c.png';
+import htmlIcon from '../images/languageLogos/html.png';
+import cssIcon from '../images/languageLogos/css.png';
+import javascriptIcon from '../images/languageLogos/javascript.png';
+import javaIcon from '../images/languageLogos/java.png';
+import reactIcon from '../images/languageLogos/react.png';
+import '../styles/hero.css';
 const Hero = ()=>{
     return(
         <section id="home">

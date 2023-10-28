@@ -1,5 +1,5 @@
-import './styles/about.css';
-import photo from "./images/aboutMePic.webp";
+import '../styles/about.css';
+import photo from "../images/aboutMePic.webp";
 const About = ()=>{
     return(
         <div id="aboutContainer">
