@@ -1,7 +1,5 @@
 
     const ProjectInsert = ({project, count})=>{
-    console.log(project);
-    console.log(count);
     const LangTag = ({languages})=>{
         return(
             <div className="projectLanguagesWrapper">
@@ -18,9 +16,11 @@
                         <h1 className="projectHeader">{item.name}</h1>
                         <h2 className="projectDate">{item.date}</h2>
                         <p className="projectDescription">{item.description}</p>
+                        <div className="languageUsedWrapper">
                         {
                             item.languages.map((langs)=><LangTag languages={langs}/>)
                         }
+                        </div>
                         <footer className="projectLogosBottom">
                             <a href={item.urls[0]} className="codeButton">Code</a>
                             <a href={item.urls[1]} className="repoButton">Live Webpage</a>
@@ -36,9 +36,11 @@
                     <h1 className="projectHeader">{item.name}</h1>
                     <h2 className="projectDate">{item.date}</h2>
                     <p className="projectDescription">{item.description}</p>
+                    <div className="languageUsedWrapper">
                     {
                         item.languages.map((langs)=><LangTag languages={langs}/>)
                     }
+                    </div>
                     <footer className="projectLogosBottom">
                         <a href={item.urls[0]} className="codeButton">Code</a>
                         <a href={item.urls[1]} className="repoButton">Live Webpage</a>

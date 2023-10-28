@@ -4,7 +4,6 @@ import schnackPhoto from '../images/projectPhotos/schnack.webp';
 import formPhoto from '../images/projectPhotos/form.webp';
 import ProjectInsert from './ProjectInsert';
 import '../styles/projects.css';
-import { useState } from 'react';
 class ProjectItem{
     constructor(name, date, description, languages, urls, photo,){
       this.name  = name;
@@ -49,10 +48,9 @@ const Form = new ProjectItem(
 );
 const projects = [Weather, Quiz, Schnack, Form];
 const Project = ()=>{
-    const [projectCount, setProjectCount] = useState(projects.length);
     return(
         <section id="projects">
-            <div id="projectWrapperInner">
+            <div id="projectOutterWrapperInner">
                 <h1 id="projectsLabel">PROJECTS</h1>
                 <div id="projectSubheader">Each project represents a unique skill I've acquired</div>
                 <div id="actualProjects">
