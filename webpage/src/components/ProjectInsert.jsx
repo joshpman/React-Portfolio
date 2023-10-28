@@ -13,17 +13,22 @@
                 <div className="projectWrapperInner">
                     <img src={item.photo} className="projectImage" alt=""></img>
                     <div className="projectContentWrapper">
-                        <h1 className="projectHeader">{item.name}</h1>
-                        <h2 className="projectDate">{item.date}</h2>
-                        <p className="projectDescription">{item.description}</p>
-                        <div className="languageUsedWrapper">
-                        {
-                            item.languages.map((langs)=><LangTag languages={langs}/>)
-                        }
-                        </div>
+                            <div className="projectNameDateWrapper">
+                                <h1 className="projectHeader">{item.name}</h1>
+                                <h2 className="projectDate">{item.date}</h2>
+                            </div>
+                            <div className="projectDescriptLangWrapper">
+                                <p className="projectDescription">{item.description}</p>
+                                <div className="languageUsedWrapper">
+                                {
+                                    item.languages.map((langs)=><LangTag languages={langs}/>)
+                                }
+                                </div>
+                            </div>
+                    
                         <footer className="projectLogosBottom">
-                            <a href={item.urls[0]} className="codeButton">Code</a>
-                            <a href={item.urls[1]} className="repoButton">Live Webpage</a>
+                            <a href={item.urls[0]} className="codeButton">View Code</a>
+                            <a href={item.urls[1]} className="codeButton">Live Webpage</a>
                         </footer>
 
                     </div>
@@ -33,17 +38,21 @@
         return(
             <div className="projectWrapperInner">
                 <div className="projectContentWrapper">
-                    <h1 className="projectHeader">{item.name}</h1>
-                    <h2 className="projectDate">{item.date}</h2>
-                    <p className="projectDescription">{item.description}</p>
-                    <div className="languageUsedWrapper">
-                    {
-                        item.languages.map((langs)=><LangTag languages={langs}/>)
-                    }
+                    <div className="projectNameDateWrapper">
+                        <h1 className="projectHeader">{item.name}</h1>
+                        <h2 className="projectDate">{item.date}</h2>
+                    </div>
+                    <div className="projectDescriptLangWrapper">
+                        <p className="projectDescription">{item.description}</p>
+                        <div className="languageUsedWrapper">
+                        {
+                            item.languages.map((langs)=><LangTag languages={langs}/>)
+                        }
+                        </div>
                     </div>
                     <footer className="projectLogosBottom">
-                        <a href={item.urls[0]} className="codeButton">Code</a>
-                        <a href={item.urls[1]} className="repoButton">Live Webpage</a>
+                        <a href={item.urls[0]} className="codeButton">View Code</a>
+                        <a href={item.urls[1]} className="codeButton">Live Webpage</a>
                     </footer>
 
                 </div>

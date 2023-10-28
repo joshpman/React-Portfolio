@@ -41,22 +41,74 @@
     align-items: center;
     width: 80rem;
     height: 30rem;
-    gap: 5%;
+    gap: 3%;
 }
 .projectContentWrapper{
     display: flex;
     flex-direction: column;
-    width: 80%;
     height: 25rem;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
+    gap: 1rem;
+    text-align: center;
+}
+.projectDescriptLangWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 .projectImage{
-    height: 25rem;
+    width: 50rem;
     border-radius: 2vmin;
     border: 3px solid var(--secondary-text);
     box-shadow: 0rem 0rem .3rem .3rem #ccc;
 }
-.projectImage:hover{
+.projectImage:hover, .projectLanguagesWrapper:hover{
     cursor: pointer;
+}
+.projectHeader{
+    font-size: 2.2rem;
+}
+.projectDate{
+    color: var(--secondary-text);
+    font-size: 1.7rem;
+
+}
+.projectDescription{
+    font-size: 2rem;
+    color: var(--secondary-text);
+    font-weight: bold;
+}
+.languageUsedWrapper{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-around;
+}
+.projectLanguagesWrapper{
+    padding: .5rem;
+    background-color: var(--secondary-color);
+    border-radius: 3vmin;
+    box-shadow: 0 0 .25rem .25rem #ccc;
+    transition: 100ms linear;
+}
+.projectLanguagesWrapper:hover{
+    transform: translateY(-.2rem);
+    box-shadow: 0 .2rem .45rem .25rem #ccc;
+}
+.projectLogosBottom{   
+    margin-top: 2rem;
+    display: flex;
+    width: 20rem;
+    justify-content: space-between;
+}
+.codeButton{
+    color: var(--primary-text);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 100ms linear;
+}
+.codeButton:hover{
+    color: var(--text-hover);
 }

@@ -18,7 +18,7 @@ const Weather = new ProjectItem(
     "Weather App",
     "September 2023",
     "Weather App written with HTML, CSS, and JS. Utilized LocationIQ and OpenMETEO Api",
-    ["HTML","JavaScript", "CSS","APIs"],
+    ["HTML","JavaScript", "CSS"],
     ["URL 1", "URL 2"],
     weatherPhoto
 );
@@ -26,12 +26,12 @@ const Quiz = new ProjectItem(
     "Quiz Game",
     "October 2023",
     "Developed Single-Page Quiz Game with ReactJS, CSS, and OpenTDB API.",
-    ["HTML, CSS, ReactJS, APIs"],
+    ["HTML", "CSS", "ReactJS"],
     ["URL 1", "URL 2"],
     quizPhoto
 );
 const Schnack = new ProjectItem(
-    "Company Webpage Demo",
+    "Company Webpage",
     "August 2023",
     "Developed Frontend for Schnack.io webpage.Utilzied HTML, CSS, and JavaScript",
     ["HTML", "CSS", "Javascript"],
