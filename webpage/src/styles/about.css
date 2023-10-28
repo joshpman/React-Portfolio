@@ -4,8 +4,6 @@
     justify-content: center;
     padding: 15vh;
     width: 100%;
-    box-shadow: inset 0px 1rem 1rem -.5rem #CCC,
-    inset 0px -1rem 1rem -.5rem #CCC;
 }
 #aboutWrapper{
     display: flex;

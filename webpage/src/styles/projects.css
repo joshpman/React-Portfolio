@@ -1,0 +1,26 @@
+img{
+    width: 400px;
+}
+#projects{
+    padding-top: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--secondary-color);
+    box-shadow: inset 0px 1rem 1rem -.5rem #CCC;
+
+}
+#actualProjects{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.projectWrapper{
+    width: 90rem;
+    height: 35rem;
+    background-color: var(--primary-color);
+    border-radius: 6vmin;
+    box-shadow: 0rem 0rem .5rem .5rem #ccc;
+}

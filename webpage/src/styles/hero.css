@@ -2,7 +2,6 @@
 #home{
     display: flex;
     flex-direction: column;
-    justify-content: top;
     align-items: center;
     width: 100%;
     min-height: 95vh;
@@ -11,6 +10,7 @@
     overflow-x: hidden;
     overflow-y:visible;
     background-color: var(--secondary-color);
+    box-shadow: inset 0px -1rem 1rem -.5rem #CCC;
 }
 #topBottomWrapper{
     display: flex;
@@ -92,9 +92,28 @@
 }
 #heroFooterRight{
     display: flex;
-    width: 25rem;
+    width: 27.5rem;
     justify-content: space-between;
     align-items: center;
+}
+.languageWrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 7.5rem;
+    transition: 200ms linear;
+}
+.languageLeft, .languageRight{
+    width: 3.5rem;
+    border-radius: .8vmin;
+    transition: 200ms linear;
+}
+.languageLeft:hover, .languageRight:hover{
+    cursor: pointer;
+    
+}
+.languageWrapper:hover{
+    cursor: pointer;
+    transform: translateY(-15%);
 }
 @media(max-width: 1150px){
     #topBottomWrapper{
