@@ -21,7 +21,7 @@
                                 <p className="projectDescription">{item.description}</p>
                                 <div className="languageUsedWrapper">
                                 {
-                                    item.languages.map((langs)=><LangTag languages={langs}/>)
+                                    item.languages.map((langs,index)=><LangTag languages={langs} key={index}/>)
                                 }
                                 </div>
                             </div>
@@ -46,7 +46,7 @@
                         <p className="projectDescription">{item.description}</p>
                         <div className="languageUsedWrapper">
                         {
-                            item.languages.map((langs)=><LangTag languages={langs}/>)
+                            item.languages.map((langs,index)=><LangTag languages={langs} key={index}/>)
                         }
                         </div>
                     </div>
