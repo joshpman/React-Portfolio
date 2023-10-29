@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.19a344c4.css",
+    "main.js": "/static/js/main.f2da9f24.js",
+    "static/media/Quiz.webp": "/static/media/Quiz.d1d0923305e713bfc7d6.webp",
+    "static/media/aboutMePic.webp": "/static/media/aboutMePic.56982f877045110bd99d.webp",
+    "static/media/bitMoji.webp": "/static/media/bitMoji.64050dab0f302b9df73c.webp",
+    "static/media/schnack.webp": "/static/media/schnack.80182cf24113da5cba65.webp",
+    "static/media/weather.webp": "/static/media/weather.5c403111fc370663715f.webp",
+    "static/media/jpLogo.webp": "/static/media/jpLogo.577959ed475f4d5fb7b0.webp",
+    "static/media/form.webp": "/static/media/form.947803a2e30875c53ffe.webp",
+    "static/media/lightModeToggle.webp": "/static/media/lightModeToggle.e19196485d9aeed68928.webp",
+    "static/media/hamburgerMenu.svg": "/static/media/hamburgerMenu.36205a3ae2bd50f75b25988d882ee52f.svg",
+    "index.html": "/index.html",
+    "static/media/xLogo.webp": "/static/media/xLogo.4151cd61669a42af03aa.webp",
+    "static/media/darkModeToggle.webp": "/static/media/darkModeToggle.49544dae208d76797ef8.webp",
+    "static/media/mailIcon.webp": "/static/media/mailIcon.9ba31fdf7d74678cc5b4.webp",
+    "static/media/downloadResume.webp": "/static/media/downloadResume.19dbad4068a91301dd79.webp",
+    "main.19a344c4.css.map": "/static/css/main.19a344c4.css.map",
+    "main.f2da9f24.js.map": "/static/js/main.f2da9f24.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19a344c4.css",
+    "static/js/main.f2da9f24.js"
+  ]
+}
