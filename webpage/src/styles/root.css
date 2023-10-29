@@ -74,7 +74,7 @@
     .themeSwitcherIcon {
     height:48px
     }
-    #aboutContainer {
+    #about {
     display:flex;
     align-items:center;
     justify-content:center;
@@ -542,13 +542,13 @@
     overflow-x:hidden
     }
     @media(max-width:800px) {
-    #aboutContainer #aboutWrapper {
+    #about #aboutWrapper {
     width:40rem
     }
     #aboutWrapper #aboutRight {
     width:40rem
     }
-    #root #aboutContainer {
+    #root #about {
     padding:0;
     width:100%;
     height:auto
@@ -600,13 +600,13 @@
     align-items:center;
     justify-content:center
     }
-    #root #home,#root #aboutContainer {
+    #root #home,#root #about {
     padding-top:7rem
     }
     .projectWrapper {
     width:25rem
     }
-    #aboutContainer #aboutWrapper,#aboutWrapper #aboutRight {
+    #about #aboutWrapper,#aboutWrapper #aboutRight {
     width:25rem
     }
     #aboutRight #aboutPara {
@@ -657,7 +657,7 @@
     #aboutLeft #aboutLeftImage {
     width:300px
     }
-    #aboutContainer #aboutWrapper,#aboutWrapper #aboutRight {
+    #about #aboutWrapper,#aboutWrapper #aboutRight {
     width:20rem
     }
     #aboutMeHeader,#aboutMeLabel,#aboutPara {

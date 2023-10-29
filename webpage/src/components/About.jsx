@@ -1,7 +1,7 @@
 import photo from "../images/aboutMePic.webp";
 const About = ()=>{
     return(
-        <div id="aboutContainer">
+        <div id="about">
             <div id="aboutWrapper">
                 <div id="aboutLeft">
                     <img src={photo} draggable={false} alt="Something broke" id="aboutLeftImage"></img>
@@ -13,7 +13,6 @@ const About = ()=>{
                 </div>
             </div>
         </div>
-
     ) 
 }
 export default About;

@@ -52,7 +52,7 @@
                         <a href={item.urls[1]} className="codeButton">Live Webpage</a>
                     </footer>
                 </div>
-                <img src={item.photo} onClick={()=>{ window.open(item.urls[0], '_blank')}} className="projectImage" alt=""></img>
+                <img src={item.photo} className="projectImage" alt=""></img>
             </div>
         )
     }

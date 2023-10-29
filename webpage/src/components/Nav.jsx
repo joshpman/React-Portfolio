@@ -45,7 +45,7 @@ const Nav = ()=>{
                         :menuStatus===1?<img alt="Exit" draggable={false} src={mobileClose} onClick={closeMobileMenu} className="mobileMenu"></img>:undefined
                     }
                     <li className="navLi"><a onClick={checkMenu} href="#home">Home</a></li>
-                    <li className="navLi"><a onClick={checkMenu} href="#aboutWrapper">About</a></li>
+                    <li className="navLi"><a onClick={checkMenu} href="#about">About</a></li>
                     <li className="navLi"><a onClick={checkMenu} href="#projects">Projects</a></li>
                     <li className="navLi"><a onClick={checkMenu} href="#contact">Contact</a></li>
                     <li className="navLi">{
