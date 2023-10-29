@@ -1,4 +1,3 @@
-
     const ProjectInsert = ({project, count})=>{
     const LangTag = ({languages})=>{
         return(
@@ -25,12 +24,10 @@
                                 }
                                 </div>
                             </div>
-                    
                         <footer className="projectLogosBottom">
-                            <a href={item.urls[0]} className="codeButton">View Code</a>
+                            <a href='#' onClick={(e)=>{e.preventDefault(); window.open(item.urls[0], '_blank')}} className="codeButton">View Code</a>
                             <a href={item.urls[1]} className="codeButton">Live Webpage</a>
                         </footer>
-
                     </div>
                 </div>
             )
@@ -51,12 +48,11 @@
                         </div>
                     </div>
                     <footer className="projectLogosBottom">
-                        <a href={item.urls[0]} className="codeButton">View Code</a>
+                        <a href='#' onClick={(e)=>{e.preventDefault(); window.open(item.urls[0], '_blank')}} className="codeButton">View Code</a>
                         <a href={item.urls[1]} className="codeButton">Live Webpage</a>
                     </footer>
-
                 </div>
-                <img src={item.photo} className="projectImage" alt=""></img>
+                <img src={item.photo} onClick={()=>{ window.open(item.urls[0], '_blank')}} className="projectImage" alt=""></img>
             </div>
         )
     }
@@ -66,5 +62,4 @@
         </div>
     )
 }
-
 export default ProjectInsert;

@@ -6,6 +6,13 @@
     --secondary-color:#e9e9e9;
     --text-hover:#5858f5
     }
+    * {
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+        font-family:Helvetica;
+        scroll-behavior: smooth;
+    }
     h1:hover,h2:hover,p:hover {
     cursor:default
     }
@@ -184,7 +191,8 @@
     overflow-x:hidden;
     overflow-y:visible;
     background-color:var(--secondary-color);
-    box-shadow:inset 0 -1rem 1rem -.5rem #CCC
+    box-shadow:inset 0 -1rem 1rem -.5rem #CCC;
+    scroll-behavior: smooth
     }
     #topBottomWrapper {
     display:flex;
@@ -350,7 +358,7 @@
     border:3px solid var(--secondary-text);
     box-shadow:0 0 .3rem .3rem #ccc
     }
-    .projectImage:hover,.projectLanguagesWrapper:hover {
+   .projectLanguagesWrapper:hover, .projectLanguagesWrapper .projectLanguageH:hover {
     cursor:pointer
     }
     .projectHeader {
@@ -526,12 +534,6 @@
     .projectImage {
     height:11rem
     }
-    }
-    * {
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
-    font-family:Helvetica
     }
     #root {
     min-height:100vh;

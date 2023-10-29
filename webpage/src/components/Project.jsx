@@ -3,7 +3,6 @@ import quizPhoto from '../images/projectPhotos/Quiz.webp';
 import schnackPhoto from '../images/projectPhotos/schnack.webp';
 import formPhoto from '../images/projectPhotos/form.webp';
 import ProjectInsert from './ProjectInsert';
-
 class ProjectItem{
     constructor(name, date, description, languages, urls, photo,){
       this.name  = name;
@@ -19,7 +18,7 @@ const Weather = new ProjectItem(
     "September 2023",
     "Weather App written with HTML, CSS, and JS. Utilized LocationIQ and OpenMETEO Api",
     ["HTML","JavaScript", "CSS"],
-    ["URL 1", "URL 2"],
+    ["https://github.com/joshpman/weather", "weather/"],
     weatherPhoto
 );
 const Quiz = new ProjectItem(
@@ -27,7 +26,7 @@ const Quiz = new ProjectItem(
     "October 2023",
     "Developed Single-Page Quiz Game with ReactJS, CSS, and OpenTDB API.",
     ["HTML", "CSS", "ReactJS"],
-    ["URL 1", "URL 2"],
+    ["https://github.com/joshpman/quizWebpage", "quizWebpage/"],
     quizPhoto
 );
 const Schnack = new ProjectItem(
@@ -35,7 +34,7 @@ const Schnack = new ProjectItem(
     "August 2023",
     "Developed Frontend for Schnack.io webpage.Utilzied HTML, CSS, and JavaScript",
     ["HTML", "CSS", "Javascript"],
-    ["URL 1", "URL 2"],
+    ["https://github.com/joshpman/Schnack", "Schnack"],
     schnackPhoto
 );
 const Form = new ProjectItem(
@@ -43,7 +42,7 @@ const Form = new ProjectItem(
     "October 2023",
     "3-step Registration page made with HTML, CSS, and JS. Validated input using custom written Regular Expressions.",
     ["HTML", "CSS", "Javascript"],
-    ["URL 1", "URL 2"],
+    ["https://github.com/joshpman/Registration-Form", "Registration-Form/"],
     formPhoto
 );
 const projects = [Weather, Quiz, Schnack, Form];
@@ -62,5 +61,4 @@ const Project = ()=>{
         </section>
     )
 }
-
 export default Project;

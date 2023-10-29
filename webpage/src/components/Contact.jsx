@@ -1,6 +1,9 @@
 import mail from '../images/mailIcon.webp'
 import resume from '../images/downloadResume.webp'
 const Contact = ()=>{
+    const sendEmail = ()=>{
+    window.open("mailto:jpearlma@mtu.edu?subject=Reaching Out&body=Hey Josh, How's it going? ");
+    }
     return(
         <div id="contact">
         <div id="contactWrapper">
@@ -11,27 +14,25 @@ const Contact = ()=>{
             <div id="contactMethodWrapper">
                 <div className="contactSegmentWrapper">
                     <div className="contactIconWrapper">
-                        <img draggable={false} src={mail} alt="" className="contactIcon"></img>
+                        <img onClick={sendEmail} draggable={false} src={mail} alt="" className="contactIcon"></img>
                     </div>
                     <div className="contactInfoWrapper">
                         <h1 className="topContactLabel">Email Me!</h1>
-                        <h2 className="bottomContactLabel">jpearlma@mtu.edu</h2>
+                        <h2 onClick={sendEmail} className="bottomContactLabel">jpearlma@mtu.edu</h2>
                     </div>
                 </div>
                 <div className="contactSegmentWrapper">
                     <div className="contactIconWrapper">
-                        <img draggable={false} src={resume} alt="" className="contactIcon"></img>
+                        <img onClick={()=>window.open('/downloads/JoshPearlmanResume.pdf', '_blank')} draggable={false} src={resume} alt="" className="contactIcon"></img>
                     </div>
                     <div className="contactInfoWrapper">
                         <h1 className="topContactLabel">Download My Resume!</h1>
-                        <h2 className="bottomContactLabel">Click Here!</h2>
+                        <h2 onClick={()=>window.open('/downloads/JoshPearlmanResume.pdf', '_blank')} className="bottomContactLabel">Click Here!</h2>
                     </div>
                 </div>
             </div>
         </div>
         </div>
     )
-
 }
-
 export default Contact;
