@@ -195,3 +195,24 @@
         padding-top: 3rem;
     }
   }
+@media(max-width: 500px){
+    #projectsLabel, #projectSubheader{
+        width: 25rem;
+        padding-left: 10%;
+    }
+    .projectWrapper .projectWrapperInner{
+        height: 40rem;
+        justify-content: center;
+    }
+    .projectWrapperInner .languageUsedWrapper{
+        width: 20rem;
+    }
+    #actualProjects .projectWrapper{
+        width: 22.5rem;
+        height: 42.5rem;
+    }
+    .projectImage{
+        height: 11rem;
+    }
+    
+}
