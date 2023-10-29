@@ -34,6 +34,7 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
+    align-items: center;
 }
 .navLi a{
     font-size: 1.3rem;
@@ -41,6 +42,9 @@
     color: var(--primary-text);
     text-decoration: none;
     transition: 100ms linear;
+}
+.navLi img:hover{
+    cursor: pointer;
 }
 .navLi a:hover{
     color: rgb(88, 88, 245);
@@ -53,7 +57,12 @@
 .mobileNav{
 
 }
-
+.themeSwitcherIcon{
+    height: 48px;
+}
+#lightModeIcon{
+    /*filter: grayscale(1) invert(1);*/
+}
 /*
 @media (prefers-color-scheme: dark){
     #navWrapperOuter{

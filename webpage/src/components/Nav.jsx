@@ -2,6 +2,8 @@ import '../styles/nav.css';
 import mobileMenu from '../images/hamburgerMenu.svg';
 import mobileClose from '../images/xLogo.webp';
 import logo from '../images/jpLogo.webp';
+import lightToDark from '../images/icons/lightModeToggle.webp';
+import darkToLight from '../images/icons/darkModeToggle.webp';
 import { useState } from 'react';
 const Nav = ()=>{
     const showMobileMenu = ()=>{
@@ -23,20 +25,34 @@ const Nav = ()=>{
             closeMobileMenu();
         }
     }
+    const enableDarkMode = ()=>{
+        const sheet = document.styleSheets[0];
+        console.log(sheet);
+        // /*document.body.style.setProperty('--primary-color', "#000")*
+        setStyleState(1);
+    }
+    const disableDarkMode = ()=>{
+        setStyleState(0);
+    }
     const [menuStatus, setMenuStatus] = useState(0);
+    const [styleState, setStyleState] = useState(0);
     return(
         <div id="navWrapperOuter">
             <div id="navWrapper">
                 <img id="navLogo" src={logo} alt="Logo"></img>
                 <ul id="navOptions">
                     {
-                        menuStatus===0?<img draggable={false} src={mobileMenu} onClick={showMobileMenu} className="mobileMenu"></img>
-                        :menuStatus===1?<img draggable={false} src={mobileClose} onClick={closeMobileMenu} className="mobileMenu"></img>:undefined
+                        menuStatus===0?<img alt="Menu" draggable={false} src={mobileMenu} onClick={showMobileMenu} className="mobileMenu"></img>
+                        :menuStatus===1?<img alt="Exit" draggable={false} src={mobileClose} onClick={closeMobileMenu} className="mobileMenu"></img>:undefined
                     }
                     <li className="navLi"><a onClick={checkMenu} href="#home">Home</a></li>
                     <li className="navLi"><a onClick={checkMenu} href="#aboutWrapper">About</a></li>
                     <li className="navLi"><a onClick={checkMenu} href="#projects">Projects</a></li>
                     <li className="navLi"><a onClick={checkMenu} href="#contact">Contact</a></li>
+                    <li className="navLi">{
+                        styleState===0?<img className="themeSwitcherIcon" alt="Dark Mode" src={lightToDark} onClick={enableDarkMode}></img>:
+                        <img alt="Light Mode" className="themeSwitcherIcon" id="lightModeIcon" src={darkToLight} onClick={disableDarkMode}></img>
+                    }</li>
                 </ul> 
             </div>
         </div>
