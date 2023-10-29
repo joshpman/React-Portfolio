@@ -40,7 +40,7 @@ const Schnack = new ProjectItem(
 const Form = new ProjectItem(
     "Registration Form Demo",
     "October 2023",
-    "3-step Registration page made with HTML, CSS, and JS. Validated input using custom written Regular Expressions.",
+    "Registration Form with Input Validation using custom written Regular Expressions.",
     ["HTML", "CSS", "Javascript"],
     ["https://github.com/joshpman/Registration-Form", "Registration-Form/"],
     formPhoto

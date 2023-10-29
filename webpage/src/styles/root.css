@@ -450,7 +450,7 @@
     height:15rem
     }
     .projectWrapperInner {
-    width:35rem;
+    width:25rem;
     height:30rem
     }
     .projectImage {
@@ -468,6 +468,9 @@
     }
     .projectDescriptLangWrapper {
     gap:.5rem
+    }
+    .languageUsedWrapper{
+        width: 25rem;
     }
     }
     @media(max-width: 1150px) {
@@ -568,6 +571,7 @@
     padding:0;
     width:100vw;
     height:100vh;
+    align-items: flex-start;
     padding:5vh 0 35vh 10vw;
     flex-direction:row-reverse;
     justify-content:space-between;
@@ -601,7 +605,8 @@
     justify-content:center
     }
     #root #home,#root #about {
-    padding-top:7rem
+    padding-top:7rem;
+    padding-bottom: 7rem
     }
     .projectWrapper {
     width:25rem
