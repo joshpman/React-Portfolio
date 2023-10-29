@@ -38,7 +38,7 @@ const Nav = ()=>{
     return(
         <div id="navWrapperOuter">
             <div id="navWrapper">
-                <img id="navLogo" src={logo} alt="Logo"></img>
+                <img onClick={()=>window.location.href="#home"} id="navLogo" src={logo} alt="Logo"></img>
                 <ul id="navOptions">
                     {
                         menuStatus===0?<img alt="Menu" draggable={false} src={mobileMenu} onClick={showMobileMenu} className="mobileMenu"></img>
@@ -57,5 +57,4 @@ const Nav = ()=>{
         </div>
     )
 }
-
 export default Nav;
