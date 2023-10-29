@@ -10,9 +10,3 @@ h1:hover, h2:hover, p:hover{
     cursor:default;
 }
 
-@media(max-width: 1050px){
-    .projectWrapper{
-        width: 40rem;
-        height: 35rem;
-    }
-}

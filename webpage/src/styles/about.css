@@ -7,7 +7,7 @@
 }
 #aboutWrapper{
     display: flex;
-    max-width: 120rem;
+    width: 120rem;
     align-items: flex-start;
     justify-content: center;
 

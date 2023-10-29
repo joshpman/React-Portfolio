@@ -11,14 +11,88 @@
 }
 @media(max-width:800px){
   #aboutContainer #aboutWrapper{
-    max-width: 40rem;
+    width: 40rem;
   }
   #aboutWrapper #aboutRight{
     width: 40rem;
   }
-  #aboutContainer{
-    padding: 0 !important;
+  #root #aboutContainer{
+    padding: 0;
     width: 100%;
     height: auto;
+    
   }
+  .mobileMenu{
+    display: block;
+  }
+  #navOptions li{
+      display: none;
+  }
+  #navOptions{
+      justify-content: flex-end;
+  }
+  #navOptions.mobileNav{
+      position: fixed;
+      top: 0%;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      padding: 5vh 0 35vh 10vw;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      flex-direction: column;
+      background-color: var(--primary-color);
+  }
+  #navOptions.mobileNav .mobileMenu{
+      width: 5rem;
+      height: 5rem;
+  }
+  #navWrapper:has(#navOptions.mobileNav){
+    padding: 0;
+
+  }
+
+  #navOptions.mobileNav li{
+      display: block; 
+  }
+  #navOptions.mobileNav li a{
+      font-size: 4rem;
+  }
+
+}
+@media(max-width: 650px){
+  
+  #root #home, #root #aboutContainer{
+    padding-top: 3rem;
+  }
+  .projectWrapper{
+    width: 25rem;
+  }
+  #aboutContainer #aboutWrapper, #aboutWrapper #aboutRight{
+    width: 25rem
+  }
+  #aboutRight #aboutPara{
+    font-size: 1.5rem;
+  }
+  #topContentWrapper #heroLeftWrapper{
+    width: 25rem;
+  }
+  #topBottomWrapper #heroFooterWrapper{
+    width: 17rem;
+  }
+  #heroFooterLabel{
+    white-space: nowrap;
+  }
+  .languageWrapper .languageLeft, .languageWrapper .languageRight{
+    width: 3.5rem;
+  }
+  #heroFooterRight .languageWrapper{
+    width: 5rem;
+  }
+  #heroInner #heroFooterRight{
+    width: 20rem;
+  }
+}
+@media(max-width: 500px){
+
 }

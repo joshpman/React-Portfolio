@@ -165,3 +165,33 @@
         }
 
 }
+@media(max-width: 650px){
+    #projectOutterWrapperInner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #projectsLabel, #projectSubheader{
+        width: 30rem;
+        padding-left: 10%;
+    }
+    #projectsSubheader{
+        font-size: 1rem;
+    }
+    .projectWrapper{
+      width: 30rem;
+      height: 40rem;
+    }
+    #actualProjects{
+        align-items: center;
+    }
+    .projectImage{
+        height: 12.5rem;
+    }
+    .projectDescription{
+        width: 80%;
+    }
+    #root #projects{
+        padding-top: 3rem;
+    }
+  }
