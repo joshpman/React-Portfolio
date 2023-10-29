@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;500;600;700;800&family=Ultra&display=swap');
-:root {
+    :root {
     --primary-text:#393838;
     --secondary-text:#868585;
     --primary-color:#fff;
@@ -221,7 +220,7 @@
     font-weight:200
     }
     #socialsWrapper {
-    padding-top:1.5rem;
+    padding:2rem 0;
     display:flex;
     justify-content:space-between;
     width:80px
@@ -406,6 +405,7 @@
     .codeButton:hover {
     color:var(--text-hover)
     }
+    
     @media(max-width: 1550px) {
     #contactMethodWrapper {
     flex-direction:column;
@@ -441,7 +441,10 @@
     width:30rem
     }
     }
-    @media(max-width: 1050px) {
+    @media(max-width: 1050px){
+    .topContactLabel{
+        width: 25rem;
+    }
     .projectWrapper {
     width:40rem;
     height:35rem
@@ -489,6 +492,9 @@
     }
     }
     @media(max-width: 650px) {
+    .contactInfoWrapper .topContactLabel{
+    font-size: 2rem;
+    }
     #projectOutterWrapperInner {
     display:flex;
     flex-direction:column;
@@ -515,10 +521,76 @@
     width:80%
     }
     #root #projects {
-    padding-top:3rem
+    margin-top:3rem;
+    padding-top: 6rem
     }
     }
     @media(max-width: 500px) {
+    #heroFooterWrapper #heroInner #heroFooterRight{
+        width: 10rem
+    }
+    .contactInfoWrapper, .contactInfoWrapper .topContactLabel{
+        width: 15rem;
+    }
+    #heroInner #heroFooterRight {
+    flex-direction:column;
+    width:5rem;
+    height:13rem
+    }
+    #heroRightPhotoWrapper #bitmoji {
+    width:300px
+    }
+    #heroLeftWrapper #lowerText {
+    width:20rem
+    }
+    #heroLeftWrapper {
+    display:flex;
+    align-items:center;
+    flex-direction:column
+    }
+    #aboutLeft #aboutLeftImage {
+    width:300px
+    }
+    #root #about #aboutWrapper,#about #aboutWrapper #aboutRight {
+    width:20rem
+    }
+    #aboutMeHeader,#aboutMeLabel,#aboutPara {
+    text-align:center
+    }
+    #navWrapper #navOptions.mobileNav {
+    padding-bottom:20vh
+    }
+    #contact #contactWrapper {
+    width:90%
+    }
+    #heroInner #heroFooterRight {
+    flex-direction:column;
+    width:5rem;
+    height:13rem
+    }
+    #heroRightPhotoWrapper #bitmoji {
+    width:300px
+    }
+    #heroLeftWrapper #lowerText {
+    width:20rem
+    }
+    #heroLeftWrapper {
+    display:flex;
+    align-items:center;
+    flex-direction:column
+    }
+    #aboutLeft #aboutLeftImage {
+    width:300px
+    }
+    #aboutMeHeader,#aboutMeLabel,#aboutPara {
+    text-align:center
+    }
+    #navWrapper #navOptions.mobileNav {
+    padding-bottom:20vh
+    }
+    #contact #contactWrapper {
+    width:90%
+    }
     #projectsLabel,#projectSubheader {
     width:25rem;
     padding-left:10%
@@ -592,7 +664,7 @@
     font-size:4rem
     }
     #contactMethodWrapper .contactSegmentWrapper {
-    width:35rem
+    width:40rem
     }
     }
     @media(max-width: 650px) {
@@ -636,42 +708,9 @@
     width:20rem
     }
     #contactMethodWrapper .contactSegmentWrapper {
-    width:30rem
+    width:35rem;
     }
     #navWrapperOuter #navWrapper {
     padding:0 2rem 2rem
-    }
-    }
-    @media(max-width: 500px) {
-    #heroInner #heroFooterRight {
-    flex-direction:column;
-    width:5rem;
-    height:13rem
-    }
-    #heroRightPhotoWrapper #bitmoji {
-    width:300px
-    }
-    #heroLeftWrapper #lowerText {
-    width:20rem
-    }
-    #heroLeftWrapper {
-    display:flex;
-    align-items:center;
-    flex-direction:column
-    }
-    #aboutLeft #aboutLeftImage {
-    width:300px
-    }
-    #about #aboutWrapper,#aboutWrapper #aboutRight {
-    width:20rem
-    }
-    #aboutMeHeader,#aboutMeLabel,#aboutPara {
-    text-align:center
-    }
-    #navWrapper #navOptions.mobileNav {
-    padding-bottom:20vh
-    }
-    #contact #contactWrapper {
-    width:90%
     }
     }
