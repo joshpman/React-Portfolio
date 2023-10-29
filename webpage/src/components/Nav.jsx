@@ -1,4 +1,3 @@
-import '../styles/nav.css';
 import mobileMenu from '../images/hamburgerMenu.svg';
 import mobileClose from '../images/xLogo.webp';
 import logo from '../images/jpLogo.webp';
@@ -35,7 +34,7 @@ const Nav = ()=>{
         setStyleState(0);
     }
     const [menuStatus, setMenuStatus] = useState(0);
-    const [styleState, setStyleState] = useState(0);
+    const [styleState, setStyleState] = useState(2);
     return(
         <div id="navWrapperOuter">
             <div id="navWrapper">
@@ -50,8 +49,8 @@ const Nav = ()=>{
                     <li className="navLi"><a onClick={checkMenu} href="#projects">Projects</a></li>
                     <li className="navLi"><a onClick={checkMenu} href="#contact">Contact</a></li>
                     <li className="navLi">{
-                        styleState===0?<img className="themeSwitcherIcon" alt="Dark Mode" src={lightToDark} onClick={enableDarkMode}></img>:
-                        <img alt="Light Mode" className="themeSwitcherIcon" id="lightModeIcon" src={darkToLight} onClick={disableDarkMode}></img>
+                        styleState===0?<img className="themeSwitcherIcon" alt="Dark Mode" src={lightToDark} onClick={enableDarkMode}></img>:styleState===1?
+                        <img alt="Light Mode" className="themeSwitcherIcon" id="lightModeIcon" src={darkToLight} onClick={disableDarkMode}></img>:undefined
                     }</li>
                 </ul> 
             </div>

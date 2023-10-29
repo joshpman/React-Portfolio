@@ -6,7 +6,6 @@ import cssIcon from '../images/languageLogos/css.png';
 import javascriptIcon from '../images/languageLogos/javascript.png';
 import javaIcon from '../images/languageLogos/java.png';
 import reactIcon from '../images/languageLogos/react.png';
-import '../styles/hero.css';
 const Hero = ()=>{
     return(
         <section id="home">

@@ -1,6 +1,5 @@
 import mail from '../images/mailIcon.webp'
 import resume from '../images/downloadResume.webp'
-import '../styles/contact.css';
 const Contact = ()=>{
     return(
         <div id="contact">

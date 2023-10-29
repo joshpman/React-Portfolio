@@ -3,7 +3,7 @@ import quizPhoto from '../images/projectPhotos/Quiz.webp';
 import schnackPhoto from '../images/projectPhotos/schnack.webp';
 import formPhoto from '../images/projectPhotos/form.webp';
 import ProjectInsert from './ProjectInsert';
-import '../styles/projects.css';
+
 class ProjectItem{
     constructor(name, date, description, languages, urls, photo,){
       this.name  = name;
