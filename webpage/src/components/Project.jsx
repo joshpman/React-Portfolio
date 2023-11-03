@@ -17,7 +17,7 @@ const Weather = new ProjectItem(
     "Weather App",
     "September 2023",
     "Weather App written with HTML, CSS, and JS. Utilized LocationIQ and OpenMETEO Api",
-    ["HTML","JavaScript", "CSS"],
+    ["HTML","CSS", "Javascript"],
     ["https://github.com/joshpman/weather", "weather/"],
     weatherPhoto
 );
