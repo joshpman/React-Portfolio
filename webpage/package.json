@@ -40,5 +40,10 @@
   },
   "devDependencies": {
     "gh-pages": "^6.0.0"
-  }
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

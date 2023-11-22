@@ -23,11 +23,11 @@ const Contact = ()=>{
                 </div>
                 <div className="contactSegmentWrapper">
                     <div className="contactIconWrapper">
-                        <img onClick={()=>window.open('/downloads/JoshPearlmanResume.pdf', '_blank')} draggable={false} src={resume} alt="" className="contactIcon"></img>
+                        <img onClick={()=>window.open('/downloads/JoshuaPearlmanResume.pdf', '_blank')} draggable={false} src={resume} alt="" className="contactIcon"></img>
                     </div>
                     <div className="contactInfoWrapper">
                         <h1 className="topContactLabel">Download My Resume!</h1>
-                        <h2 onClick={()=>window.open('/downloads/JoshPearlmanResume.pdf', '_blank')} className="bottomContactLabel">Click Here!</h2>
+                        <h2 onClick={()=>window.open('/downloads/JoshuaPearlmanResume.pdf', '_blank')} className="bottomContactLabel">Click Here!</h2>
                     </div>
                 </div>
             </div>
